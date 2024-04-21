@@ -1,3 +1,5 @@
+'use client'; // tell this moddule should go to browser as js bundle
+
 import React from 'react'
 import CardBotton from './CardBotton'
 
