@@ -1,14 +1,22 @@
 import Image from "next/image";
 
-interface User{
+interface UseriInterface{
   id:number,
   name: string
 }
+const Home = async ()=> {
 
-export default function Home() {
+  const res = await fetch('https://jsonplaceholder.typicode.com/users')
+  const users : UseriInterface[] = await res.json()
   return (
     <>
-
+    <ul>
+     {users.map(user => <li key= {user.id}>{user.name}</li> )}
+    </ul>
+      
     </>
   );
 }
+
+
+export default Home
