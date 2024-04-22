@@ -6,7 +6,8 @@ const Home = async ()=> {
 
   return (
     <>
-    <Navbar/>      
+    <Navbar/>  
+    <div className="font-pop"    >sdfsfsfsfsfdsf</div>
     </>
   );
 }
