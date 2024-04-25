@@ -22,7 +22,21 @@ function Home() {
 
           <div className='relative h-svh w-full bg-red-600'>a</div>
         </motion.div>
-        
+
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, transform :'translateX(100%) '},
+            visible: { opacity: .5, transform :'translateX(0%) '},
+            
+          }}
+
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: .3, delay: .2 }}
+
+          className='abolute h-svh w-full bg-red-600'
+        />
+
       </div>
     </div>
 
